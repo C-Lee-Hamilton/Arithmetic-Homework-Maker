@@ -2,9 +2,9 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFound';
-import Settings from './pages/Creator';
+import Settings from './pages/Generator';
 import Preview from './pages/Preview';
-import Creator from './pages/Creator';
+import Generator from './pages/Generator';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true, 
-        element: <Creator />,
+        element: <Generator/>,
       },
       {
         path: 'settings',
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
 
 const App: React.FC = () => {
   return (
-    <div className="w-full h-full bg-offwhite">
+    <div className="w-full h-full bg-grey">
     <RouterProvider router={router} />
   </div>
   );
