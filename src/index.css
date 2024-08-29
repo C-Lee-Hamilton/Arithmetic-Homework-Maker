@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "film-cryptic";
+  src: url(./assets/fonts/film-cryptic.regular.ttf);
+}
+@font-face {
+  font-family: "film-cryptic-italic";
+  src: url(./assets/fonts/film-cryptic.oblique.ttf);
+}
